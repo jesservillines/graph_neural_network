@@ -13,7 +13,7 @@ def main():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
     # Load data
-    df = pd.read_csv('model_df_12_02_24.csv')
+    df = pd.read_csv('notebooks/model_df_12_02_24.csv')
     
     # Engineer features
     df = engineer_features(df)
