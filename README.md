@@ -175,7 +175,7 @@ If you use this code in your research, please cite:
 ```
 @software{gnn_los_prediction,
     title={Graph Neural Network for Length of Stay Prediction},
-    author={[Your Name]},
+    author={[Jesse Villines]},
     year={2024},
     url={https://github.com/jesservillines/graph_neural_network}
 }
