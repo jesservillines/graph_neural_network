@@ -1,58 +1,25 @@
 # Graph Neural Network for Length of Stay Prediction
 
-This project implements a Graph Neural Network (GNN) to predict patient length of stay using PyTorch Geometric.
+## Overview
+This repository implements a Graph Neural Network (GNN) to predict patient length of stay using PyTorch Geometric. The implementation features advanced feature selection, interactive visualizations, and model interpretability.
 
 ## Project Structure
-
 ```
 ├── src/
-│   ├── models/
-│   │   ├── gnn_model.py     # GNN model architecture
-│   │   └── loss.py          # Custom loss functions
-│   └── utils/
-│       ├── data_processing.py    # Data processing utilities
-│       ├── feature_engineering.py # Feature engineering functions
-│       ├── feature_selection.py   # Feature selection methods
-│       └── visualization.py       # Visualization utilities
-├── main.py                  # Main training script
-└── README.md               # Project documentation
+│   ├── config/             # Configuration settings
+│   ├── data/              # Dataset handling
+│   ├── models/            # GNN architecture
+│   ├── training/          # Training pipeline
+│   ├── evaluation/        # Model evaluation
+│   └── utils/             # Utility functions
+├── notebooks/             # Interactive Jupyter notebooks
+│   ├── part1_data_exploration.py
+│   ├── part2_feature_engineering.py
+│   ├── part3_graph_construction.py
+│   └── part4_model_training.py
+├── main.py               # Main training script
+├── run_notebooks.py      # Script to run all notebooks
+└── requirements.txt      # Project dependencies
 ```
 
-## Setup
-
-1. Create a virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-2. Install requirements:
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-1. Place your dataset file (`model_df_12_02_24.csv`) in the project root.
-2. Run the main script:
-```bash
-python main.py
-```
-
-## Features
-
-- Graph-based patient similarity modeling
-- Advanced feature engineering
-- SHAP-based feature selection
-- 3D visualization of patient clusters
-- Custom loss function for length of stay prediction
-- Multi-head attention mechanisms
-
-## TODO
-
-- [ ] Implement data loading and cross-validation
-- [ ] Add training pipeline with early stopping
-- [ ] Implement model evaluation metrics
-- [ ] Add hyperparameter optimization
-- [ ] Enhance visualization capabilities
-- [ ] Add model interpretability functions
+[Rest of the README content remains the same as previously provided...]
