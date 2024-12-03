@@ -1,7 +1,7 @@
 #%% md
 # Part 1: Data Loading and Exploration
 
-This notebook covers the initial data loading and exploratory data analysis for the Length of Stay prediction project.
+# This notebook covers the initial data loading and exploratory data analysis for the Length of Stay prediction project.
 #%%
 # Import required libraries
 import sys
