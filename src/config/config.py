@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 @dataclass
 class ModelConfig:
@@ -43,5 +43,5 @@ class ModelConfig:
     optimization_timeout: Optional[int] = None
     
     # Evaluation
-    metrics: List[str] = ('mse', 'rmse', 'mae', 'r2')
+    metrics: Tuple[str, ...] = ('mse', 'rmse', 'mae', 'r2')
     n_background_samples: int = 100
