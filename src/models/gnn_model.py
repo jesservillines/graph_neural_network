@@ -12,8 +12,12 @@ class GNNModel(torch.nn.Module):
         self.lin1 = torch.nn.Linear(hidden_dim, hidden_dim)
         self.lin2 = torch.nn.Linear(hidden_dim, 1)
         self.dropout = torch.nn.Dropout(0.5)
-        
+    
     def forward(self, x, edge_index, batch):
+        # Make sure x is 2D
+        if x.dim() == 1:
+            x = x.unsqueeze(-1)
+        
         x = self.conv1(x, edge_index)
         x = self.batch_norm1(x)
         x = F.elu(x)
